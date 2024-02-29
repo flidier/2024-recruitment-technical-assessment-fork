@@ -26,8 +26,15 @@ def kLargestCategories(files: list[File], k: int) -> list[str]:
 """
 Task 3
 """
+# don't read, I did javascript;;;;;;;
 def largestFileSize(files: list[File]) -> int:
-    return 0
+    if len(files)>0:
+        largest = files[0].size
+        for i in files:
+            if i.size > largest:
+                largest = i.size
+
+    return largest
 
 
 if __name__ == '__main__':

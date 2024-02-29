@@ -3,7 +3,23 @@
  * Task 1
  */
 function leafFiles(files) {
-    return [];
+    parents = [];
+    for (let index = 0; index < files.length; index++) {
+        parents.push = files[index].parent;
+    }
+    leafs = []s
+    for (let index = 0; index < files.length; index++) {
+        aleaf = true
+        for (let j = 0; j < parents.length; j++) {
+            if(files[index].id = parents[j]){
+                aleaf = false;
+            }
+        }
+        if(aleaf){
+            leafs.push(aleaf)
+        }
+    }
+    return leafs;
 }
 
 /**
